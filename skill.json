@@ -1,0 +1,41 @@
+{
+  "name": "genpark-autonomous-price-negotiation-discount-broker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous price negotiation discount broker calculating dynamic concession thresholds based on LTV, inventory age, and margin floors.",
+  "author": "genpark",
+  "category": "dynamic-pricing",
+  "tags": [
+    "price-negotiation",
+    "discount-broker",
+    "dynamic-concessions",
+    "agent-bargaining",
+    "margin-protection"
+  ],
+  "inputs": {
+    "listed_cart_total_usd": {
+      "type": "number"
+    },
+    "customer_lifetime_value_usd": {
+      "type": "number"
+    },
+    "inventory_clearance_priority_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "negotiation_session_id": {
+      "type": "string"
+    },
+    "final_negotiated_price_usd": {
+      "type": "number"
+    },
+    "authorized_coupon_code": {
+      "type": "string"
+    },
+    "concession_contract_token_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
